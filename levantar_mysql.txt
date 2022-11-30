@@ -1,0 +1,2 @@
+docker run -d -p3306:3306 -eMYSQL_ROOT_PASSWORD="prueba" mysql
+docker run -d -p3306:3306 -eMYSQL_ALLOW_EMPTY_PASSWORD=true mysql

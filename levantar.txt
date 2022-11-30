@@ -1,0 +1,19 @@
+$ docker compose up -d
+Network trabajo_default  Creating
+Network trabajo_default  Created
+Container trabajo-db-1  Creating
+Container trabajo-db-1  Created
+Container trabajo-python-1  Creating
+Container trabajo-python-1  Created
+Container trabajo-nginx-1  Creating
+Container trabajo-nginx-1  Created
+Container trabajo-db-1  Starting
+Container trabajo-db-1  Started
+Container trabajo-python-1  Starting
+Container trabajo-python-1  Started
+Container trabajo-nginx-1  Starting
+Error response from daemon: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/run/desktop/mnt/host/c/Raul/Cursos/Docker/Trabajo/nginx/uwsgi_params" to rootfs at "/etc/nginx/uwsgi_params": mount /run/desktop/mnt/host/c/Raul/Cursos/Docker/Trabajo/nginx/uwsgi_params:/etc/nginx/uwsgi_params (via /proc/self/fd/14), flags: 0x5000: not a directory: unknown: Are you trying to mount a directory onto a file (or vice-versa)? Check if the specified host path exists and is the expected type
+
+docker exec -ti trabajo-python-1 sh
+
+There was no error except for: strconv.Atoi: parsing "": invalid syntax. Scenario: a go project. dockerfile. docker-compose.yaml. Windows 10 with docker-desktop. Solution: docker-compose down --remove-orphans. Explaination: For some reason, the docker-compose create some unknown containers along with service.
